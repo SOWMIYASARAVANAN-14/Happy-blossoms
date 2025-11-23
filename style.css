@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,rgb(224, 171, 157),rgb(166, 152, 227),#c47272);
+}
+.parent{
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: chocolate;
+    box-shadow: 5px 5px 20px black;
+    color: black;
+}
+.parent nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    height: 15%;
+    background-color: plum;
+}
+nav h1{
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    color: red;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+}
+nav h1 .logo{
+     width: 40px;   /* adjust size */
+    height: 40px;
+    object-fit: contain;
+}
+nav h1::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+    transition: 0.5s ease;
+}
+ul li a:hover{
+    text-decoration: wavy;
+    color: white;
+}
+.parent .main_content{
+    display: flex;
+    height: 85%;
+
+}
+.main_content .left{
+    width: 50%;
+    height: 100%;
+    padding: 40px 80px;
+}
+.left h3{
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.left h1{
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+.left h1 span{
+    color: orangered;
+}
+.left p{
+    font-size: 12px;
+    font-weight: 400;
+}
+.left h2{
+    text-decoration: underline;
+    margin:  20px 0 25px 0;
+    font-weight: 500;
+}
+.left button{
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    background-color: beige;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.main_content .right{
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gradient{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 48%;
+    left: 56%;
+    border-radius: 50%;
+    
+}
